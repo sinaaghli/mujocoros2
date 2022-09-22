@@ -39,9 +39,9 @@
 
 namespace mujocoros2
 {
-  mujocoros2::mujocoros2() : Node("mujocoros2")
+mujocoros2::mujocoros2() : Node("mujocoros2")
 {
-    RCLCPP_INFO(get_logger(), "Initializing mujocoros2...");
+  RCLCPP_INFO(get_logger(), "Initializing mujocoros2...");
 }
 
 }  // end namespace mujocoros2

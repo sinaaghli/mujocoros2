@@ -61,7 +61,10 @@
 class mujocoros2Test : public ::testing::Test
 {
 public:
-  mujocoros2Test() { node_ = std::make_shared<mujocoros2::mujocoros2>(); }
+  mujocoros2Test()
+  {
+    node_ = std::make_shared<mujocoros2::mujocoros2>();
+  }
 
 protected:
   rclcpp::Node::SharedPtr node_;
@@ -82,7 +85,7 @@ TEST_F(mujocoros2Test, SpinOnce)
   EXPECT_TRUE(test);
 }
 
-int main(int argc, char ** argv)
+int main(int argc, char** argv)
 {
   // Initialize ROS
   rclcpp::init(argc, argv);

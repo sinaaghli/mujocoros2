@@ -41,7 +41,6 @@
 #include <rclcpp/logging.hpp>
 #include <rclcpp/rclcpp.hpp>
 
-
 namespace mujocoros2
 {
 class mujocoros2 : public rclcpp::Node

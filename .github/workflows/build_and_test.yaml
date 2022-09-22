@@ -27,10 +27,10 @@ jobs:
     env:
       CCACHE_DIR: /github/home/.ccache
       CXXFLAGS: "-Wall -Wextra -Wwrite-strings -Wunreachable-code -Wpointer-arith -Wredundant-decls"
-      
+
       ROS_DISTRO: foxy
       ROS_REPO: main
-      
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

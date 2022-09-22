@@ -35,24 +35,24 @@ repos:
     hooks:
       - id: black
 
-  - repo: local
-    hooks:
-      - id: ament_copyright
-        name: ament_copyright
-        language: system
-        entry: ament_copyright
-        args: ['--add-missing', 'picknik', 'picknik_proprietary', '.']
+  # - repo: local
+  #   hooks:
+  #     - id: ament_copyright
+  #       name: ament_copyright
+  #       language: system
+  #       entry: ament_copyright
+  #       args: ['--add-missing', 'picknik', 'picknik_proprietary', '.']
 
   # Cmake hooks
-  - repo: local
-    hooks:
-      - id: ament_lint_cmake
-        name: ament_lint_cmake
-        description: Check format of CMakeLists.txt files.
-        stages: [commit]
-        entry: ament_lint_cmake
-        language: system
-        files: CMakeLists\.txt$
+  # - repo: local
+  #   hooks:
+  #     - id: ament_lint_cmake
+  #       name: ament_lint_cmake
+  #       description: Check format of CMakeLists.txt files.
+  #       stages: [commit]
+  #       entry: ament_lint_cmake
+  #       language: system
+  #       files: CMakeLists\.txt$
 
   - repo: https://github.com/codespell-project/codespell
     rev: v2.0.0
