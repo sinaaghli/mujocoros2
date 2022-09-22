@@ -1,0 +1,6 @@
+# Used with vcstool, users can download and source of all packages in this.
+repositories:
+  mujoco:
+     type: git
+     url: https://github.com/deepmind/mujoco.git
+     version: 2.2.2
